@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
            appBar: AppBar(
             backgroundColor: Colors.grey[850],
             centerTitle: true,
-            title:Text("البيان الحقيقي",style: TextStyle(color:Colors.white ,fontSize: 20),),),
+            title:Text("البيان الحكيم",style: TextStyle(color:Colors.white ,fontSize: 20),),),
               drawer: MyDrawer( ), 
       body: 
      Directionality(

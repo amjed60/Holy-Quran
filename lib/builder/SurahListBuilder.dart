@@ -3,9 +3,9 @@ import '../entity/Surah.dart';
 import 'SurahViewBuilder.dart';
 
 class SurahListBuilder extends StatefulWidget {
-  final List<Surah> surah;
+   List<Surah> surah=[];
 
-  SurahListBuilder({Key key, this.surah}) : super(key: key);
+  SurahListBuilder({ this.surah});
 
   @override
   _SurahListBuilderState createState() => _SurahListBuilderState();
@@ -14,7 +14,7 @@ class SurahListBuilder extends StatefulWidget {
 class _SurahListBuilderState extends State<SurahListBuilder> {
   TextEditingController editingController = TextEditingController();
 
-  List<Surah> surah = List<Surah>();
+  List<Surah> surah = [];
 
   void initSurahListView() {
     if (surah.isNotEmpty) {
@@ -28,11 +28,11 @@ class _SurahListBuilderState extends State<SurahListBuilder> {
     initSurahListView();
 
     /// SearchList contains every surah
-    List<Surah> searchList = List<Surah>();
+    List<Surah> searchList =[];
     searchList.addAll(surah);
 
     /// Contains matching surah(s)
-    List<Surah> listData = List<Surah>();
+    List<Surah> listData = [];
     if (query.isNotEmpty) {
       /// Loop all surah(s)
       searchList.forEach((item) {

@@ -11,7 +11,7 @@ import '../widget/Bookmark.dart';
 
 
 class SurahViewBuilder extends StatefulWidget {
-  SurahViewBuilder({Key key, @required this.pages}) : super(key: key);
+  SurahViewBuilder({ @required this.pages}) ;
   final int pages;
 
   @override
